@@ -1,0 +1,55 @@
+# Hugo configuration file
+title: rcamine
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/rcamine"
+      params:
+        icon: github
+    - name: LinkedIn
+      weight: 7
+      url: "https://www.linkedin.com/in/raphael-camine/"
+      params:
+        icon: linkedin
+    - name: Cal.com
+      weight: 9
+      url: "https://cal.com/rcamine"
+      params:
+        icon: calendar
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  author:
+    name: Raphael Camine
+    email: raphael.camine@gmail.com

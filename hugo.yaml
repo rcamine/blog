@@ -42,6 +42,9 @@ menu:
         icon: calendar
 
 params:
+  assets:
+    disableFingerprinting: true
+
   navbar:
     displayTitle: true
     displayLogo: false
@@ -53,3 +56,4 @@ params:
   author:
     name: Raphael Camine
     email: raphael.camine@gmail.com
+
